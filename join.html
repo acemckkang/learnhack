@@ -1,0 +1,60 @@
+<form action="itwill.com" name="fr" method="get" onsubmit="return checkall();">
+	<table border="1">
+		<tr>
+			<td>아이디</td>
+			<td><input type="text" name="id" minlength="4" maxlength="10"></td>
+		</tr>
+		<tr>
+			<td>비밀번호</td>
+			<td><input type="password" name="pw"></td>
+		</tr>
+		<tr>
+			<td>비밀번호 확인</td>
+			<td><input type="password" name="repw"></td>
+		</tr>
+		<tr>
+			<td>이름</td>
+			<td><input type="text" name="name"></td>
+		</tr>
+		<tr>
+			<td>주민번호</td>
+			<td><input type="text" name="idnum1" maxlength="6"> - <input type="password" name="idnum2" maxlength="7"></td>
+		</tr>
+		<tr>
+			<td>성별</td>
+			<td>
+				<input type="radio" name="gender" value="여">여
+				<input type="radio" name="gender" value="남">남
+			</td>
+		</tr>
+		<tr>
+			<td>취미</td>
+			<td>
+				<input type="checkbox" name="hobby" value="reading">독서
+				<input type="checkbox" name="hobby" value="swmming">수영
+				<input type="checkbox" name="hobby" value="breathing">침대에서숨쉬기
+			</td>
+		</tr>
+		<tr>
+			<td>좋아하는 과목</td>
+			<td>
+				<select name="sel">
+					<option value="">선택</option>
+					<option value="자바">JAVA</option>
+					<option value="js">JavaScript</option>
+					<option value="db">DataBase</option>
+				</select>
+			</td>
+		</tr>
+		<tr>
+			<td>하고싶은 말</td>
+			<td><textarea rows="5" cols="30" placeholder ="자유롭게 입력하세요" name="txt"></textarea></td>
+		</tr>
+		<tr>
+			<td colspan="2">
+				<input type="submit" value="제출">
+				<input type="reset" value="초기화">
+			</td>
+		</tr>
+	</table>
+</form>
